@@ -27,7 +27,7 @@ public class QueryProcessorTest {
 
   @Test
   public void knowsWhatIsSumOfNumbers() throws Exception {
-    assertThat(queryProcessor.process("what is 18 plus 2"), containsString("20"));
+    assertThat(queryProcessor.process("ae663ea0:what is 18 plus 2"), containsString("20"));
   }
 
 }

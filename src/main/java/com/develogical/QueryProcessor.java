@@ -13,7 +13,7 @@ public class QueryProcessor {
             return "Manish Rathi";
         } else if (query.toLowerCase().contains ("what is")) {
             Pattern pattern = Pattern.compile("[0-9]+");
-            Matcher matcher = pattern.matcher(query);
+            Matcher matcher = pattern.matcher(query.split(":")[1]);
 
             Integer sum = 0;
             while (matcher.find()) {
