@@ -11,6 +11,8 @@ public class QueryProcessor {
             return "William Shakespeare";
         } else if (query.toLowerCase().contains("what is your name")) {
             return "Manish Rathi";
+        } else if (query.toLowerCase().contains("what color is banana")) {
+            return "Yellow";
         } else if (query.toLowerCase().contains ("what is")) {
             Pattern pattern = Pattern.compile("[0-9]+");
             Matcher matcher = pattern.matcher(query.split(":")[1]);
@@ -21,7 +23,20 @@ public class QueryProcessor {
             }
 
             return String.valueOf(sum);
+        } else if (query.toLowerCase().contains ("which of the following numbers is the largest")) {
+            Pattern pattern = Pattern.compile("[0-9]+");
+            Matcher matcher = pattern.matcher(query.split(":")[2]);
+
+            Integer largest = 0;
+            while (matcher.find()) {
+                int number = Integer.parseInt(matcher.group());
+                if (number > largest)
+                    largest = number;
+            }
+
+            return String.valueOf(largest);
         }
+
         return "";
     }
 }

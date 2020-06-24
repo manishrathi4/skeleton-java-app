@@ -30,4 +30,8 @@ public class QueryProcessorTest {
     assertThat(queryProcessor.process("ae663ea0:what is 18 plus 2"), containsString("20"));
   }
 
+  @Test
+  public void findLargestNumber() throws Exception {
+    assertThat(queryProcessor.process("ae663ea0:which of the following numbers is the largest: 171, 238, 99, 83"), containsString("238"));
+  }
 }
