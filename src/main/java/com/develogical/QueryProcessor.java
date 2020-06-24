@@ -11,7 +11,7 @@ public class QueryProcessor {
             return "William Shakespeare";
         } else if (query.toLowerCase().contains("what is your name")) {
             return "Manish Rathi";
-        } else if (query.toLowerCase().contains("what color is banana")) {
+        } else if (query.toLowerCase().contains("what colour is a banana")) {
             return "Yellow";
         } else if (query.toLowerCase().contains ("what is")) {
             Pattern pattern = Pattern.compile("[0-9]+");
