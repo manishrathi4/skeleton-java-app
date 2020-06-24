@@ -2,3 +2,9 @@ language: java
 jdk:
 - openjdk8
 script: mvn clean verify
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: MZz7BUC/Aowku2oimvkWlv6OqvEzXmo/By2gqEN6nf1FUzcvguff2ItKqVBMZIml78e8tcsdbBD85dYjGafd80+yHjCH60+NDpCtAKeIUCRbWDy69A10Wo/FteJyRcysEmjTO59VSINYqSTroxxkDMhLxNO93R356A5EnRPZ+5hSwwr166Wws246oVxyvpTxQK74LOFQorJCbaWrqDdR4/Dhxdu3V7tQSAsoTvBvB/KtoBUprU2atMp4Z4Ms9eFOlQdkrMkiLweHO0f9QA91SmocV7+CWeG3SzG5V6xjjxwJx/5g7U3uTuK4zMmNMTSMkBADGc1tH9QyyrCbRs/SoRJKNaKGZd4+FnqsGnHiQm4Rj57Ox3HCt63Fq2wqe7S1xx8xpAPIroXExiPh9fE/B4u5u/X022VGNXs0p0SGC7nXl/u1MKfRlsRS455H7BrGZh53eKzYe4TEgvTf2+mh/xwJrx+G3gGyn3H7eTP6B78oF+ANIFX7eg0XdQu2WVm/VEhOpU3QkqXV2oFPn/QbvFDm1VhN+A+xvvY77SB0TFNLdfyEV9MQWWaFeZKp7CehG+K7dAbPZJxEuPQkzqmPoDYYXiNopTltwiBkU+Vo3LRFQ4/ZsdZwfVJTzT0NPO/DJC1Jz5bJvXRpaE5r3mAuUz/bNhSFZCnvts3zhaXUlSU=
+  app: mr-99
